@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { COLORS } from '../../constants';
+import { COLORS } from "../../constants";
 
 const Breadcrumbs = ({ children }) => {
   return <Wrapper>{children}</Wrapper>;
@@ -22,11 +22,13 @@ const CrumbWrapper = styled.div`
     margin-left: 8px;
 
     &::before {
-      content: '/';
+      content: "/";
       margin-right: 8px;
       color: ${COLORS.gray[300]};
     }
   }
+
+  margin-top: 16px;
 `;
 
 const CrumbLink = styled.a`
